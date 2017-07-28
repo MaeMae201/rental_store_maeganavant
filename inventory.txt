@@ -1,1 +1,1 @@
-code, items, amount_in_invetory, price
+items, amount_in_invetory, price

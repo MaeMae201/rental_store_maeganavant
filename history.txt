@@ -1,4 +1,4 @@
-item, days_used, price
+code, item, days_used, price
 
 
 #store parameters 
