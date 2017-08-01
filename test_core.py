@@ -1,10 +1,10 @@
 #100% TEST COVERAGE FOR THE CORE
 import core
-import shell
-import disk
 
-def test_sales_tax():
-    assert sales_tax == purchase * 0.07
+# def test_sales_tax(sales_tax):
+#     assert sales_tax = 0.07
 
-# def test_something():
-#     assert
+def test_items():
+    party_inventory = 
+    assert '1' == 'Mardi Gras Masks'
+    assert '1' == '3.50'

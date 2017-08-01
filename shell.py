@@ -1,4 +1,5 @@
 #the built in functions input() and print() can only be called in the SHELL!!<<<>>>>
+import core
 import disk
 import time,sys
 typing_speed = 12
@@ -23,10 +24,10 @@ def main():
     purchase = slow_type('\n To make a selection type in the number listed by the item. \n')
     purchase = slow_type('\n How many days will you be renting this product? \n')
     print(slow_type('\n Your total includes the deposit and sales tax. \n'))
+    
     purchase = slow_type('\n Total cost: {:.2f}')
     print(slow_type('\n Thanks! Party On...w/out the voodoo \n'))
-    
-    write_in_the_history = core.sales_tax
+    write_in_the_history = disk.sales_tax
 
     if purchase == 'restock':
         print(core.restock())

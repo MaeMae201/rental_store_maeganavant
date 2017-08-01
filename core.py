@@ -1,5 +1,4 @@
 #functions go in the core
-import disk
 def get_item_prices():
     """int -> float
     """
@@ -17,11 +16,23 @@ def get_item_prices():
     return None
 
 def sales_tax():
-    for items in party_inventory:
-        price = float(days) * price
+    while True:
+        for items in party_inventory:
+            price = float(days) * price
         sales_tax = 0.07
         deposit = 25.00
         days = party_inventory
         tax = price * sales_tax + deposit
         total_price = price + tax + deposit
-        return total_price
+    return total_price
+
+def deposit():
+    deposit = 25.00
+    total_price = sales_tax + price + deposit + replacement_value
+    return total_price
+
+# def replacement_value():
+#     for items in party_inventory:
+#         price = total_price + 10%
+#     if items == purchase:
+#         return
