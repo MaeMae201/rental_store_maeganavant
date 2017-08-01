@@ -22,14 +22,12 @@ class something():
 def sales_tax():
     """
     """
-    while True:
-        for item in sales_tax:
-            price = float(days) * price
-            sales_tax = 0.07
-            deposit = 25.00
-            days = party_inventory
-            tax = price * sales_tax + deposit
-            total_price = price + tax + deposit
+    price = int(days) * price
+    sales_tax == 0.07
+    deposit = 25.00
+    days = party_inventory
+    tax = price * sales_tax + deposit
+    total_price = price + tax + deposit
     return total_price
 
 def deposit():
