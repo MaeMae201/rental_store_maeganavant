@@ -1,1 +1,1 @@
-items, days, price
+items, days, prices

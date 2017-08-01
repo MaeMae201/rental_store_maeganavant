@@ -32,7 +32,4 @@ def deposit():
     return total_price
 
 # def replacement_value():
-#     for items in party_inventory:
-#         price = total_price + 10%
-#     if items == purchase:
-#         return
+#     replacement == .10

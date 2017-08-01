@@ -23,11 +23,14 @@ def main():
     print(*party_inventory,sep='\n')
     purchase = slow_type('\n To make a selection type in the number listed by the item. \n')
     purchase = slow_type('\n How many days will you be renting this product? \n')
-    print(slow_type('\n Your total includes the deposit and sales tax. \n'))
-    
+  
     purchase = slow_type('\n Total cost: {:.2f}')
     print(slow_type('\n Thanks! Party On...w/out the voodoo \n'))
-    write_in_the_history = disk.sales_tax
+
+    f = open('history.txt','r')
+    if f.mode == 'r':
+        contents = f.read()
+        print (contents)
 
     if purchase == 'restock':
         print(core.restock())
@@ -35,7 +38,6 @@ def main():
     if purchase == 'revenue':
         print('Your total revenue is ${:.2f}'.format(core.revenue()))
         return None
-
 
 if __name__ == '__main__':
     main()

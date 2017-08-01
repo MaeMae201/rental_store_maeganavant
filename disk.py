@@ -16,24 +16,16 @@ def history_away():
         file.write(message)
     return message
 
-def write_in_the_history():
+def make_history():
     inventory = []
+    str_1 = ['items, days, price']
     with open('history.txt', 'r') as file:
         file.readline()
         lines = file.readlines()
     for line in lines:
         split_string = line.strip().split(', ')
         inventory.append([split_string[0], float(split_string[1]), float(split_string[2].strip().replace('$', ''))])
-    return inventory
-
-def take_away(party_inventory, items):
-    inventory = all_inventory()
-    str_l = ['items, amount_in_inventory, price']
-    for item in inventory:
-       message = ('{}, {}, {}, {}'.format(items, amount_in_inventory, price))
-    with open('inventory.txt','w') as file:
-        file.write(message)
-    return True
+    return lines
 
 def restock():
     str_1 = ['items, amount_in_invetory, price']
@@ -48,6 +40,15 @@ def restock():
     with open('inventory.txt','w') as file:
         file.write(message)
     return message
+
+def add_in():
+    str_l = ['items, amount_in_inventory, price']
+    inventory = []
+    for item in inventory:
+       message = ('{}, {}, {}, {}'.format(items, amount_in_inventory, price))
+    with open('inventory.txt','w') as file:
+        file.write(message)
+    return True
 
 def revenue():
     inventory = write_in_the_history()
