@@ -27,8 +27,8 @@ def main():
     purchase = slow_type('\n 𝓣𝓸𝓽𝓪𝓵 𝓒𝓸𝓼𝓽:${:.2f}')
     print(slow_type('\n 𝓣𝓱𝓪𝓷𝓴𝓼! 𝓟𝓪𝓻𝓽𝔂 𝓞𝓷....𝔀/𝓸𝓾𝓽 𝓽𝓱𝓮 𝓿𝓸𝓸𝓭𝓸𝓸 \n'))
     disk.make_history()
-    core.get_item_prices()
-    
+    core.something()
+    core.sales_tax()
     f = open('history.txt','r')
     if f.mode == 'r':
         contents = f.read()

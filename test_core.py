@@ -9,8 +9,6 @@ def test_items():
     assert '1' == 'Mardi Gras Masks'
     True
 
-
-
 # def history_away(party_inventory):
 #     if party_inventory == '1':
 #         return 'Mardi Gras Masks'
