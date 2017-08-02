@@ -1,31 +1,35 @@
 #functions go in the core
-class something():
-    def get_item_prices(self):
-        """
-        """
-        party_inventory = []
-        if party_inventory == '1' or 'Mardi Gras Masks':
-            return 3.50
-        if party_inventory == '2' or 'Outdoor wooden dance floor':
-            return 50.00
-        if party_inventory == '3' or 'Can Lights':
-            return 2.50
-        if party_inventory == '4' or 'Mardi Gras Street Signs':
-            return 5.00
-        if party_inventory == '5' or 'Building Props':
-            return 25.00
-            print('Try Again.')
-            s = something
-            s.out()
-            return None
-
 def sales_tax_other():
-    """ Returning the final cost of everything
     """
-    amount_of_days = int(days) * float(price)
+    """
+    amount_of_days = int(days) * float(prices)
     replacement_value = .10
     sales_tax = 0.07
     deposit = 25.00
-    tax = amount_of_days * sales_tax
-    total_price = amount_of_days + tax + deposit + replacement_value
-    return total_price
+    tax = int(amount_of_days) * float(sales_tax)
+    total_price = int(amount_of_days) + tax + float(deposit) + float(replacement_value)
+    #return total_price
+    print('\n 𝓣𝓸𝓽𝓪𝓵 𝓒𝓸𝓼𝓽:${:.2f} \n')
+
+def shopping_inven(items):
+    stock = {
+        "Mardi Gras Masks":500, 
+        "Outdoor Wooden Dance Floor":500, 
+        "Can Lights":500,
+        "Mardi Gras Street Signs":500, 
+        "Building Props":500
+        }
+    prices = {
+        "Mardi Gras Masks":3.50,
+        "Outdoor Wooden Dance Floor":50.00,
+        "Can Lights":2.50,
+        "Mardi Gras Street Signs":5.00,
+        "Building Props":25.00
+    }
+
+def compute_bill(items):
+    total = 0 
+    if stock[items] > 0:
+            total += prices[items]
+            stock[items] -= 1    
+    return total
