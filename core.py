@@ -19,28 +19,13 @@ class something():
             s.out()
             return None
 
-def sales_tax():
+def sales_tax_other():
+    """ Returning the final cost of everything
     """
-    """
-    price = int(days) * price
-    sales_tax == 0.07
+    amount_of_days = int(days) * float(price)
+    replacement_value = .10
+    sales_tax = 0.07
     deposit = 25.00
-    days = party_inventory
-    tax = price * sales_tax + deposit
-    total_price = price + tax + deposit
+    tax = amount_of_days * sales_tax
+    total_price = amount_of_days + tax + deposit + replacement_value
     return total_price
-
-def deposit():
-    """
-    """
-    deposit = 25.00
-    total_price = sales_tax + price + deposit + replacement_value
-    return total_price
-
-def replacement_value():
-    """
-    """
-    replacement == .10
-
-#stock = {"Mardi Gras Masks":500, "Outdoor Wooden Dance Floor":500, "Can Lights":500,
-# "Mardi Gras Street Signs":500, "Building Props":500}

@@ -3,8 +3,7 @@ import core
 import disk
 import time,sys
 from subprocess import check_output
-speak = check_output(['espeak','welcome to maegans new orlean themed party rentals!'])
-
+speak = check_output(['espeak','Welcome to Maegans New Orleans themed Party Rentals!'])
 typing_speed = 12
 def slow_type(t):
     for l in t:
@@ -25,19 +24,15 @@ def main():
     party_inventory = ['::::\t1.𝓜𝓪𝓻𝓭𝓲 𝓖𝓻𝓪𝓼 𝓜𝓪𝓼𝓴𝓼 $3.50','::::\t2.𝓞𝓾𝓽𝓭𝓸𝓸𝓻 𝓦𝓸𝓸𝓭𝓮𝓷 𝓓𝓪𝓷𝓬𝓮 𝓕𝓵𝓸𝓸𝓻 $50.00', '::::\t3.𝓒𝓪𝓷 𝓵𝓲𝓰𝓱𝓽𝓼 $2.50','::::\t4.𝓜𝓪𝓻𝓭𝓲 𝓖𝓻𝓪𝓼 𝓢𝓽𝓻𝓮𝓮𝓽𝓼 𝓢𝓲𝓰𝓷𝓼 $5.00', '::::\t5.𝓑𝓾𝓲𝓵𝓭𝓲𝓷𝓰 𝓟𝓻𝓸𝓹𝓼 $25.00']
     print(*party_inventory,sep='\n')
     purchase = slow_type('\n 𝓣𝓸 𝓶𝓪𝓴𝓮 𝓪 𝓼𝓮𝓵𝓮𝓬𝓽𝓲𝓸𝓷 𝓽𝔂𝓹𝓮 𝓲𝓷 𝓽𝓱𝓮 𝓷𝓾𝓶𝓫𝓮𝓻 𝓵𝓲𝓼𝓽𝓮𝓭 𝓫𝔂 𝓽𝓱𝓮 𝓲𝓽𝓮𝓶. \n')
-    purchase = slow_type('\n 𝓗𝓸𝔀 𝓶𝓪𝓷𝔂 𝓭𝓪𝔂𝓼 𝔀𝓲𝓵𝓵 𝔂𝓸𝓾 𝓫𝓮 𝓻𝓮𝓷𝓽𝓲𝓷𝓰 𝓽𝓱𝓲𝓼 𝓹𝓻𝓸𝓭𝓾𝓬𝓽? \n')
+    days = slow_type('\n 𝓗𝓸𝔀 𝓶𝓪𝓷𝔂 𝓭𝓪𝔂𝓼 𝔀𝓲𝓵𝓵 𝔂𝓸𝓾 𝓫𝓮 𝓻𝓮𝓷𝓽𝓲𝓷𝓰 𝓽𝓱𝓲𝓼 𝓹𝓻𝓸𝓭𝓾𝓬𝓽? \n')
   
     purchase = slow_type('\n 𝓣𝓸𝓽𝓪𝓵 𝓒𝓸𝓼𝓽:${:.2f}')
     print(slow_type('\n 𝓣𝓱𝓪𝓷𝓴𝓼! 𝓟𝓪𝓻𝓽𝔂 𝓞𝓷....𝔀/𝓸𝓾𝓽 𝓽𝓱𝓮 𝓿𝓸𝓸𝓭𝓸𝓸 \n'))
 
-    disk.make_history()
-    core.something()
-    core.sales_tax()
     f = open('history.txt','r')
     if f.mode == 'r':
         contents = f.read()
         print (contents)
-    
     f = open('inventory.txt','r')
     if f.mode == 'r':
         contents = f.read()
@@ -49,6 +44,15 @@ def main():
     if purchase == 'revenue':
         print('𝓨𝓸𝓾𝓻 𝓽𝓸𝓽𝓪𝓵 𝓻𝓮𝓿𝓮𝓷𝓾𝓮 𝓲𝓼 ${:.2f}'.format(core.revenue()))
         return None
+
+    disk.make_history()
+    disk.restock()
+    disk.add_in()
+    disk.revenue()
+    core.something()
+    core.sales_tax_other()
+    disk.make_history_2
+    disk.inventory()
 
 if __name__ == '__main__':
     main()
