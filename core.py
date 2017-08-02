@@ -1,17 +1,14 @@
 #functions go in the core
-def sales_tax_other():
-    """
-    """
-    amount_of_days = int(days) * float(prices)
+def calculate_totals(purchase):
+    days = 365
+    prices = 0.00
     replacement_value = .10
-    sales_tax = 0.07
-    deposit = 25.00
-    tax = int(amount_of_days) * float(sales_tax)
-    total_price = int(amount_of_days) + tax + float(deposit) + float(replacement_value)
-    #return total_price
-    print('\n 𝓣𝓸𝓽𝓪𝓵 𝓒𝓸𝓼𝓽:${:.2f} \n')
+    deposit = 5.00
+    sales_tax = purchase * .07
+    total_price = purchase + sales_tax + deposit + replacement_value
+    print('\n 𝓣𝓸𝓽𝓪𝓵 𝓒𝓸𝓼𝓽: '+ '$' + str(total_price) + ".",sep="" + '\n')
 
-def shopping_inven(items):
+def shopping_inven():
     stock = {
         "Mardi Gras Masks":500, 
         "Outdoor Wooden Dance Floor":500, 
