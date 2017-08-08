@@ -1,1 +1,7 @@
-items, quantity, price
+Code, Items, Quantity, Price
+
+1.Mardi Gras Masks                 500             $3.50            
+2.Outdoor Wooden Dance Floor       500             $50.00
+3.Can lights                       500             $2.50
+4.Mardi Gras Street Signs          500             $5.00
+5.Building Props                   500             $25.00
