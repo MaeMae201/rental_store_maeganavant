@@ -1,4 +1,4 @@
-Items, Quantity, Price, Replacement Cost
+Code,....Items,....Quantity,....Price,....Replacement Cost
 
 1, Mardi Gras Masks, 500, 3.50, 5            
 2, Outdoor Wooden Dance Floor, 500, 50.00, 100

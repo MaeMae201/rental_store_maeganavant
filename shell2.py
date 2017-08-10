@@ -84,6 +84,7 @@ def main():
             print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
+            disk.update_inventory(trans)
 
 
 if __name__ == '__main__':

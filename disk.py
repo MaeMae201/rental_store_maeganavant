@@ -17,7 +17,7 @@ def replacement_cost(num):
     for i in item:
         if num in i:
             parts = i.split(', ')
-            replacement_cost = parts[3]
+            replacement_cost = parts[3].strip()
             return replacement_cost
 
 
@@ -32,7 +32,7 @@ def price(num):
     for i in item:
         if num in i:
             parts = i.split(', ')
-            price = parts[3]
+            price = parts[3].strip()
             return price
 
 
@@ -43,3 +43,17 @@ def update_history(item, days, rental_price, total):
     transaction = '{}, {}, {}, {} \n'.format(item, days, rental_price, total)
     with open('history.txt', 'a') as file:
         file.write(transaction)
+
+
+def update_inventory(item, quantity, price, replacement_cost):
+    """ -> (txt)
+    Will update when an item is purchased,
+    and prints to inventory how many items
+    are left
+    """
+    trans = '{}, {}, {}, {} \n'.format(quantity)
+    with open('inventory.txt', 'a') as file:
+        for quantity in quantities:
+            if quantity <= 500:
+                return quantity
+        file.write(trans)
