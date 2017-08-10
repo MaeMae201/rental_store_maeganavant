@@ -55,5 +55,5 @@ def update_inventory(item, quantity, price, replacement_cost):
     with open('inventory.txt', 'a') as file:
         for quantity in quantities:
             if quantity <= 500:
+                file.write(trans)
                 return quantity
-        file.write(trans)
