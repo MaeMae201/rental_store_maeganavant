@@ -17,7 +17,7 @@ def replacement_cost(num):
     for i in item:
         if num in i:
             parts = i.split(', ')
-            replacement_cost = parts[4]
+            replacement_cost = parts[3]
             return replacement_cost
 
 
@@ -40,6 +40,6 @@ def update_history(item, days, rental_price, total):
     """ -> (txt)
     Will print text in history.txt of every transaction made.
     """
-    transaction = '{}, {}, {}, {}\n'.format(item, days, rental_price, total)
+    transaction = '{}, {}, {}, {} \n'.format(item, days, rental_price, total)
     with open('history.txt', 'a') as file:
         file.write(transaction)

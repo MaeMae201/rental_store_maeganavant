@@ -33,7 +33,7 @@ def main():
             rental_replacement_cost = disk.replacement_cost(rental_choice)
             total = core2.total_cost(rental_price, days,
                                      rental_replacement_cost)
-            print('Total Cost:', total)
+            print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
 
@@ -45,7 +45,7 @@ def main():
             rental_replacement_cost = disk.replacement_cost(rental_choice)
             total = core2.total_cost(rental_price, days,
                                      rental_replacement_cost)
-            print('Total Cost:', total)
+            print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
 
@@ -57,7 +57,7 @@ def main():
             rental_replacement_cost = disk.replacement_cost(rental_choice)
             total = core2.total_cost(rental_price, days,
                                      rental_replacement_cost)
-            print('Total Cost:', total)
+            print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
 
@@ -69,7 +69,7 @@ def main():
             rental_replacement_cost = disk.replacement_cost(rental_choice)
             total = core2.total_cost(rental_price, days,
                                      rental_replacement_cost)
-            print('Total Cost:', total)
+            print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
 
@@ -81,7 +81,7 @@ def main():
             rental_replacement_cost = disk.replacement_cost(rental_choice)
             total = core2.total_cost(rental_price, days,
                                      rental_replacement_cost)
-            print('Total Cost:', total)
+            print('Total Cost: $', total)
 
             disk.update_history(item, days, rental_price, total)
 

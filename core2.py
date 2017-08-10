@@ -22,3 +22,14 @@ def total_cost(price, days, replacement_cost):
     total_rental_cost = str(cost_w_tax) + str(depos)
 
     return str(total_rental_cost)
+
+
+def refund(price, deposit):
+    """ (float) -> (float)
+    Returns the price for refund
+    """
+    deposit = 0.10
+
+    cost = float(price) / float(deposit)
+    print('Total Refund: $')
+    return cost
