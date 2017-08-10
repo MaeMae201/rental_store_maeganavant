@@ -1,5 +1,8 @@
-Items:
-
-Total:
-
-Refund:
+Item..., Days..., Price..., Total...
+Mardi Gras Mask, 2, 3.50, 7.49
+Outdoor Wooden Dance Floor, 3, 50.00, 160.5
+Mardi Gras Mask, 2, 3.50, 7.49
+Mardi Gras Mask, 7, 3.50, 26.215
+Mardi Gras Mask, 1, 3.50, 3.745
+Mardi Gras Mask, 1, 3.50, 3.745
+Can Lights, 5, 3.50, 18.725

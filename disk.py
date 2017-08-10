@@ -6,17 +6,40 @@ def inventory_():
             print(item)
 
 
-def inventory():
-    with open('inventory.txt', 'w') as file:
-        file.writeline()
-        Quantity = file.writelines()
-        for item in Quantity:
-            if Quantity < 500:
-                return 500
+def replacement_cost(num):
+    """ (str) -> (int)
+    Returns my replacement cost from
+    inventory.txt
+    """
+    with open('inventory.txt', 'r') as file:
+        file.readline()
+        item = file.readlines()
+    for i in item:
+        if num in i:
+            parts = i.split(', ')
+            replacement_cost = parts[4]
+            return replacement_cost
 
 
-def history():
-    with open('history.txt', 'w') as file:
-        file.writelines()
-        str_1 = ['Items:', 'Total:', 'Refund:']
-        print(str_1)
+def price(num):
+    """(str) -> (int)
+    Returns my price for the rent of
+    the item from inventory.txt
+    """
+    with open('inventory.txt', 'r') as file:
+        file.readline()
+        item = file.readlines()
+    for i in item:
+        if num in i:
+            parts = i.split(', ')
+            price = parts[3]
+            return price
+
+
+def update_history(item, days, rental_price, total):
+    """ -> (txt)
+    Will print text in history.txt of every transaction made.
+    """
+    transaction = '{}, {}, {}, {}\n'.format(item, days, rental_price, total)
+    with open('history.txt', 'a') as file:
+        file.write(transaction)
